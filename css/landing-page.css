@@ -28,22 +28,36 @@
 }
 
 
-/* Create four equal columns that floats next to each other */
-.column {
-float: left;
-width: 25%;
+
+#nav-bar {
+color:white;
+text-align: right;
+font-size: 3vw;
+
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 992px) {
-.column {
-  width: 50%;
-}
+
+.center {
+  margin: auto;
+  width: 50% ;
+  padding: 10px;
+  text-align:center;
 }
 
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-.column {
-  width: 100%;
+.align-right {
+  text-align: right;
 }
+
+
+
+.column {
+  float: left;
+  width: 33.3%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
